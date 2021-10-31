@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    src: url(../fuentes/Noto-Sans/NotoSans-Regular.ttf);
+    font-family: "noto-regular";
+}
+
+body {
+
+    background-image: url("../imagenes/playa.png");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "noto-regular",sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header {
+    
+    
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 40px;
+    background-color: rgba(109, 135, 143, 0.4);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    
+    /* FlexBox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+
+.logo img{
+   
+   width: 90px;
+   margin-left: 100px;
+   display: flex;
+}
+.menu{
+    width: 100%;
+    
+}
+
+header .menu a {
+    display:inline-flex;
+    color: rgb(255, 250, 250);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 40px;
+    font-family:  sans-serif;
+    
+}
+
+header .menu a:hover {
+    text-decoration: none;
+    color: rgba(190, 218, 253, 0.849);
+    transition: all 0.3s;
+}
+
+
+.principal {
+    background-color:rgba(255, 249, 249, 0.5);
+    border-bottom-left-radius: 4px;
+    padding: 20px;
+    margin-bottom: 18px;
+    width: 70%;
+}
+.principal .video{
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    /* display: flex; */
+    
+    
+}
+
+
+.principal article .thumb img {
+   
+    width: 100%;
+    height: 280px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.principal article h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5; 
+    color: #2c7997;  
+   
+}
+
+
+.principal article p {
+    color: rgb(35, 36, 36);
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.principal article h3{
+    padding: 10px;
+    text-align: center;
+    color: rgb(38, 43, 43);
+    line-height: 1.5;
+}
+
+aside {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside img{
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+.llamanos h4{
+    color: rgb(87, 90, 95);
+    font-size: 17px;
+    margin-top: -17px;
+    margin-left: 35px;
+    cursor: pointer;
+    
+}
+.llamanos .icono{
+    color: rgb(61, 177, 197);
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+    
+}
+.forma{
+    padding-bottom:25px ;
+}
+
+.registro{
+    width: 100%;
+    max-width: 400px;
+   
+    background-color: #fff;
+    padding:21px;
+   
+    margin-bottom: 15px;
+    
+
+    
+}
+.registro h1{
+    text-align: center;
+    font-size: 23px;
+    padding: 20px;
+    padding-bottom: 35px;
+
+    margin-top: -30px;
+    
+    color: #1a2537;
+}
+.registro .entrada{
+    margin-bottom: 23px;
+    border:1px solid #aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    border-radius:10px;
+    
+}
+.registro .entrada input{
+    font-size: 17px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    
+}
+.registro  .recordar{
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-top: -10px;
+    font-size: 15px;
+    
+
+    font-family: "rubick";
+    color: rgb(66, 66, 64);
+    
+   
+   
+}
+.registro  .olvidar{
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: #13315f;
+}
+.registro .olvidar:hover{
+    color: rgb(61, 94, 201);
+    
+}
+
+
+.registro p .enlace:hover{
+    color: cadetblue;
+}
+.registro .boton{
+    background-color: #1b417a;
+    color: #fff;
+    width: 80%;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+     
+}
+.registro .boton:hover{
+    background-color: rgba(12, 128, 163, 0.932);
+}
+.registro .entrada .icono{
+    width: 23px;
+    text-align: center;
+    color: #999;
+    padding-left: 10px;
+}
+
+.botonSesion{
+    text-align:center;
+}
+
+footer {
+    
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(109, 135, 143, 0.4);
+    margin: 20px 0px;
+    border-radius: 3px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .autor {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: row;
+}
+
+
+footer .redes .icono{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+    
+    line-height: 65px;
+}
+
+footer .redes .icono .fa-youtube{
+    color: red;
+}
+footer .redes .icono .fa-facebook{
+    color: #3b5998;
+}
+footer .redes .icono .fa-twitter{
+    color: rgba(29,161,242,1.00);
+    
+}
+
+
+
+/* Pantalla de tableta */
+@media screen and (max-width:500px) {
+    
+    
+    header {
+        width: 100%;
+        flex-direction: column;
+    }
+    .logo{
+        display: flex;
+        margin-right: 100px;
+        
+    }
+    header .menu{
+        width: 100%;
+        display: flex;    
+    }
+    header .menu a{
+        width: 100%;
+        margin: auto;
+        font-size: 18px;
+        padding: 20px;
+    }
+  
+   
+    .principal {
+        width: 100%;
+        
+    }
+    .video{
+        width: 100%;
+        display: flex;
+    }
+
+    aside {
+        width: 100%;
+        
+    }
+    aside .avisos {
+        width: 40%;
+    }
+    footer {
+        width: 100%;
+       
+    }
+    footer .autor {
+        line-height: 30px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+} 
+
+/* Pantalla de celular entre 5 y 6 pulgadas */
+/* @media screen and (max-width:500px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header .menu {
+        width: 100%;
+        background-color: rgba(255,255,255,0.2);
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+}  */
+
+
+/* Pantalla de celular de menos  5 pulgadas */
+/* @media screen and (max-width:500px) {
+    
+}  */
